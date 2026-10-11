@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUI Calculator | Sahil Thukral</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero project-hero">
+    <h1>GUI Calculator</h1>
+    <p>Python Tkinter Project</p>
+  </header>
+
+  <main class="project-page">
+    <a class="back-link" href="index.html">← Go Back</a>
+
+    <section class="card">
+      <h2>About This Project</h2>
+
+      <p>
+        This is a basic graphical calculator created using Python and Tkinter.
+        It performs common arithmetic operations through a simple interface.
+      </p>
+
+      <h2>Source Code</h2>
+
+      <pre><code>import tkinter as tk
+
+def add():
+    result = int(number_one.get()) + int(number_two.get())
+    output.config(text=result)
+
+window = tk.Tk()
+window.title("GUI Calculator")
+
+number_one = tk.Entry(window)
+number_one.pack()
+
+number_two = tk.Entry(window)
+number_two.pack()
+
+button = tk.Button(window, text="Add", command=add)
+button.pack()
+
+output = tk.Label(window, text="")
+output.pack()
+
+window.mainloop()</code></pre>
+
+      <h2>Screenshots</h2>
+
+      <div class="screenshots">
+        <img src="p1_1.png" alt="GUI calculator running">
+        <img src="p1_2.png" alt="GUI calculator running">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
